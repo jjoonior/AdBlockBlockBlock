@@ -10,6 +10,7 @@ const callback = (mutationsList, observer) => {
           if (document.querySelector('.fc-ab-root')) {
             document.body.style.overflow = "visible";
             addedNode.remove();
+            observer.disconnect();
           }
         }
       }
